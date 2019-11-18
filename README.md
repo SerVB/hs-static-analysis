@@ -46,9 +46,32 @@ Provide tests for every implementation. Inspiration can be found [here](https://
 I will set up GitHub Actions once there is a test.
 
 ### Mechanism to suppress warnings
-We need a way to suppress wrong warnings. I guess it will be a file with lines of text which should be removed before checking. The file will be unique for each checker and for each step.
+We need a way to suppress wrong warnings.
 
-Add tests.
+Hyperskill supports the `[META]hidden text[/META]` tag. As you can already understand, the `hidden text` is visible at Stepik and is invisible at HS.
+
+So let's use the following syntax to suppress warnings:
+```
+[META][SUPPRESS RULE="rule_name" SYMBOLS="symbol_count"][/META]
+```
+
+Implementations must ignore `symbol_count` symbols of the first visible text after the `[SUPPRESS]` tag.
+
+For example, you have the source:
+
+`Here we show some [META][SUPPRESS RULE="multiple_spaces" SYMBOLS="3"][/META] &nbsp; spaces for you.`
+
+As you see, there are 4 spaces. At HS, it will be visible like this (I use underscores for demonstration purposes):
+
+`Here we show some____spaces for you.`
+
+And the `multiple_spaces` checker should see this text like this:
+
+`Here we show some_spaces for you.`
+
+So there is no warning.
+
+Add tests for this feature.
 
 ### HS crawler
 We need some code that goes through HS topics and calls all the implementations on them.
