@@ -26,7 +26,7 @@ TODO. First of all, choose and create a single one (better from the start). Afte
 1. **Hyphen** (-) instead of a *dash* (–) [how to check: search for space-hyphen-space].
 1. **Double hyphen** instead of a *dash*.
 1. Test count in a coding task **is small** [let's say `MINIMUM_TEST_COUNT = 5`].
-1. **Repeating spaces**.
+1. **Repeating spaces** (don't forget about `&nbsp;`).
 1. **Lesson/lessons** instead of *topic/topics*.
 1. **Unusual quotes** (‘’ or “” – like commas) instead of *normal ones* (' or ") [<--- this happens when you copy-paste your text from Google Docs to Stepik].
 1. Gender neutrality (**she he** instead of they, don't forget about **her his**).
