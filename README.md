@@ -1,10 +1,10 @@
 # HS Static Analysis
-We've decided to use ![Python 3](https://img.shields.io/badge/python-3-blue.svg).
+We've decided to use ![Kotlin](https://img.shields.io/badge/kotlin-❤-blue.svg).
 
 Open PRs!
 
 ## Code style
-Please use [PEP 8](https://www.python.org/dev/peps/pep-0008/) (for styling) and [PEP 484](https://www.python.org/dev/peps/pep-0484/) (for type hinting in all functions).
+Please use official Kotlin style guide.
 
 ## What to do
 We need the following parts:
@@ -15,13 +15,13 @@ This is a class that receives HTML text (like a Stepik text) and returns a verdi
 Think about the signature of the function.
 
 ### Implementations
-Then create some classes implementing the interface. You can use libraries like the  `beautiful soup` to parse the text.
+Then create some classes implementing the interface. You can use libraries like the  [jsoup](https://jsoup.org/download) to parse the text.
 
 Don't forget that some checks are irrelevant for text in the `<code>` tag.
 
 The list of checkers:
 
-TODO. First of all, choose and create a single one (better from the start). After completing all the parts, implement others:
+TODO. First of all, choose and create about three implementations (better from the start). After completing all the parts, implement others:
 1. **Usage of `args: Array<String>`** in Kotlin coding tasks templates.
 1. **Hyphen** (-) instead of a *dash* (–) [how to check: search for space-hyphen-space].
 1. **Double hyphen** instead of a *dash*.
@@ -42,7 +42,7 @@ Done:
 When you add a checker, move it here.
 
 ### Tests
-Provide tests for every implementation. Inspiration can be found [here](https://github.com/SerVB/compression-server/blob/b66cdea12232ebeac58010b30235289cb1bfd1e8/tests.py) (the `unittest` library).
+Provide tests for every implementation.
 
 ### CI
 I will set up GitHub Actions once there is a test.
